@@ -247,49 +247,41 @@
             </table>
         </div>
     </section>
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p><strong>Address:</strong> GWQJ+64P, Dhumri, Etah, Uttar Pradesh 207248</p>
-                    <p><strong>Phone:</strong> +91 9897197867</p>
-                    <p><strong>Email:</strong> info@sdpublicschool.edu</p>
-                    <p><strong>Office Hours:</strong> Monday to Saturday, 8:00 AM to 4:00 PM</p>
-                    <h3 style="margin-top: 30px;">Location</h3>
-                    <div style="margin-top: 15px; border-radius: 8px; overflow: hidden;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.1204547544057!2d78.92990989641719!3d27.539737401477318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39750962ac6f90e1%3A0x52bc9a6cfdf41e63!2sGWRH%2B293%2C%20Etah%2C%20Uttar%20Pradesh%20207248!5e1!3m2!1sen!2sin!4v1746371727802!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Contact form (FormSubmit) - REPLACE old <form>...</form> with this block -->
+<form action="https://formsubmit.co/info@sdpublicschool.edu" method="POST" id="contactForm">
+  <!-- Disable FormSubmit captcha (optional) -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirect after successful submit (make sure this file exists) -->
+  <input type="hidden" name="_next" value="https://sdpsdhumari.in/sdo/thanks.html">
+
+  <!-- Optional: set a custom email subject -->
+  <input type="hidden" name="_subject" value="New message from sdpsdhumari.in contact form">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input name="name" type="text" id="name" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input name="email" type="email" id="email" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input name="subject" type="text" id="subject" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" class="form-control" rows="6" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+<!-- End contact form -->
+
     <!-- Footer -->
     <footer>
         <div class="container">
